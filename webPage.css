@@ -80,12 +80,12 @@ main {
 .nav-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 6px;
 }
-
+/* 
 .nav-list li {
   margin: 6px 0;
-}
+} */
 
 .nav-link {
   display: inline-block;
@@ -171,9 +171,7 @@ main {
   margin: 6px 0;
 }
 
-/* =====================
-   BIG SCREEN (desktop)
-   ===================== */
+/* desktop version stuff */
 @media screen and (min-width: 60em) {
   .page-title { font-size: 42px; }
 
