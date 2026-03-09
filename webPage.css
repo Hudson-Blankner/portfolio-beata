@@ -1,6 +1,8 @@
+/* sticky header + nav */
+.site-header .container {
+  padding: 12px 0;
+}
 
-
-* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -10,9 +12,21 @@ body {
   color: #22231A;      /* Raisin Black */
 }
 
-img {
-  max-width: 100%;
-  display: block;
+.summary {
+  max-width: 70ch;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #F1EBE4;
+  border-bottom: 1px solid #87826E; /* Antique */
+  z-index: 10;
 }
 
 a {
@@ -29,17 +43,6 @@ a:focus {
   outline-offset: 3px;
 }
 
-/* layout helpers */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-main {
-  padding: 32px 0 48px;
-}
-
 .page-title {
   margin: 0 0 12px;
   font-size: 32px;
@@ -47,45 +50,20 @@ main {
   color: #2E2F23; /* Noir */
 }
 
-.summary {
-  /* margin: 0 0 20px; */
-  color: #2E2F23;
-  opacity: 0.85;
-  max-width: 70ch;
+main {
+  padding: 32px 0 48px;
 }
 
-.section-title {
-  margin: 0 0 12px;
-  font-size: 22px;
-  color: #2E2F23;
-}
-
-/* sticky header + nav */
-.site-header {
-  position: sticky;
-  top: 0;
-  background: #F1EBE4;
-  border-bottom: 1px solid #87826E; /* Antique */
-  z-index: 10;
-}
-
-.header-inner {
-  padding: 12px 0;
-}
-
-.site-nav {
+.site-header nav {
   margin-top: 10px;
 }
 
 .nav-list {
   list-style: none;
   padding: 0;
-  margin: 6px;
+  margin: 0;
 }
-/* 
-.nav-list li {
-  margin: 6px 0;
-} */
+
 
 .nav-link {
   display: inline-block;
@@ -96,7 +74,7 @@ main {
 }
 
 .nav-link:hover {
-  background: rgba(70, 72, 49, 0.12); /* Olive Leaf, light */
+    background: rgba(70, 72, 49, 0.12); /* Olive Leaf, light */
 }
 
 /* cards */
@@ -104,14 +82,13 @@ main {
   list-style: none;
   padding: 0;
   margin: 0;
-
   display: grid;
-  grid-template-columns: 1fr; /* phone: stack */
+  grid-template-columns: 1fr;
   gap: 16px;
 }
 
 .card {
-  background: #F7F2EC; /* slightly lighter than Salt */
+  background: #F7F2EC;
   border: 1px solid rgba(135, 130, 110, 0.5);
   border-radius: 16px;
   padding: 15px;
@@ -129,10 +106,11 @@ main {
   color: #2E2F23;
 }
 
-.card-meta {
+.card time {
+  display: block;
   margin: 6px 0 0;
   color: #2E2F23;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   font-size: 15px;
 }
 
@@ -145,10 +123,10 @@ main {
   padding-left: 20px;
 }
 
-/* home about layout (phone: stacked) */
+/* about */
 .about-box {
   display: grid;
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   gap: 18px;
 }
 
