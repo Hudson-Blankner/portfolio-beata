@@ -148,7 +148,7 @@ main {
 /* home about layout (phone: stacked) */
 .about-box {
   display: grid;
-  grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   gap: 18px;
 }
 
