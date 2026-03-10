@@ -39,7 +39,7 @@ a:hover {
 }
 
 a:focus {
-  outline: 3px solid #734E30;
+  outline: 2px solid #734E30;
   outline-offset: 3px;
 }
 
