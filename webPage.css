@@ -106,7 +106,7 @@ main {
   color: #2E2F23;
 }
 
-.card time {
+.card .timeSpan {
   display: block;
   margin: 6px 0 0;
   color: #2E2F23;
