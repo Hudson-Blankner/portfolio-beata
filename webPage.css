@@ -1,3 +1,23 @@
+.site-header p,
+.page-title,
+.card-title,
+.section-title {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.site-header p {
+  margin: 0;
+  font-size: 26px;
+}
+
+.section-title {
+  margin: 0 0 12px;
+  font-size: 28px;
+  color: #2E2F23;
+}
+
 /* sticky header + nav */
 .site-header .container {
   padding: 12px 0;
